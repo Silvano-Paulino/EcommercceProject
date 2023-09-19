@@ -1,0 +1,108 @@
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.3rem;
+    grid-template-columns: 15rem auto 9rem;
+}
+
+table {
+    margin-top: 1.3rem;
+    overflow: auto;
+}
+
+main table tbody td {
+    height: 4rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+select {
+    font-size: 0.88rem;
+    color: var(--color-dark);
+    padding:1rem 2rem; 
+    font-family: poppins, sans-serif;
+}
+
+select option {
+    font-size: 0.88rem;
+    color: var(--color-dark);
+}
+
+main table tbody td:last-child {
+    cursor: pointer;
+}
+
+/* ---------- MINHA PARTE ---------- */
+.modalizando {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    z-index: 888;
+}
+
+.modalizando .modalizando-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.modalizando-content {
+    background: #fff;
+    width: 700px;
+    padding: 2rem;
+    height: auto;
+    border-radius: 4px;
+}
+
+.modalizando-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modalizando-content table tr {
+    border-bottom: 1px solid var(--color-light);
+}
+
+.modalizando-content thead td,
+.modalizando-content tbody td {
+    text-align: center;
+    padding: 10px 6px;
+}
+
+.modalizando-content tbody td:nth-child(1),
+.modalizando-content tbody td:nth-child(2) {
+    width: 150px;
+}
+
+.modalizando-content tbody td:last-child {
+    text-align: justify;
+}
+
+.modalizando-content button {
+    cursor: pointer;
+    color: #fff;
+    background: #0496f7;
+    font-size: 1rem;
+    height: 50px;
+    width: 140px;
+    border-radius: 4px;
+    margin-top: 1.4rem;
+    font-weight: 600;
+}
+
+.modalizando-content button:hover {
+    color: #0496f7;
+    background: #fff;
+    border: solid #0496f7 1px;
+}
+
+main .form-search {
+    right: 10px;
+}

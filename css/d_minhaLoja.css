@@ -1,0 +1,200 @@
+.modalizando {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    z-index: 888;
+}
+
+.modalizando .modalizando-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.modalizando-content {
+    background: #fff;
+    width: 800px;
+    padding: 2rem;
+    height: auto;
+    border-radius: 4px;
+}
+
+.modalizando-content button {
+    cursor: pointer;
+    color: #fff;
+    background: #0496f7;
+    font-size: 1rem;
+    height: 50px;
+    width: 140px;
+    border-radius: 4px;
+    margin-top: 1.4rem;
+    font-weight: 600;
+}
+
+.modalizando-content button:hover {
+    background: #035a94;
+}
+
+
+
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.3rem;
+    grid-template-columns: 15rem auto 9rem;
+}
+
+aside .sidebar {
+    border: 1px solid transparent;
+}
+
+.container {
+    border: 1px solid transparent;
+}
+
+main {
+    border: 1px solid transparent; 
+}
+
+.right {
+    border: 1px solid transparent;
+    
+}
+
+#top-1 {
+    border: 1px solid transparent;
+}
+
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 4px;
+    color: #222;
+    background: #fff;
+    font-size: 1rem;
+}
+
+td button:nth-child(1):hover {
+  color: #0496f7;
+   
+}
+td button:nth-child(2):hover {
+     color: var(--color-sucess);
+}
+
+td button:nth-child(3):hover {
+    color: var(--color-danger);
+}
+
+.td button:nth-child(1):hover {
+    color: var(--color-danger);
+}
+
+.h2{
+    margin-top: 3rem;
+}
+
+.table-section {
+    overflow: auto;
+    margin-top: 1rem;
+    background: var(--color-white);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.7rem;
+    white-space: nowrap;
+}
+
+thead tr th {
+    text-align: center;
+    color: #363949;
+    font-size: 12px;
+}
+
+th, td {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding: 10px 14px;
+    text-align: center;
+}
+
+td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+button img {
+    width: 10px;
+    height: 10px; 
+}
+
+/* -------------- ESPECIFICAÇÃO DE PRODUTOS -------------- */
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #0496f7;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 25px;
+}

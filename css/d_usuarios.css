@@ -1,0 +1,290 @@
+.container {
+    grid-template-columns: 14rem auto 9rem !important;
+}
+
+main {
+    width: 94%;
+}
+
+#geral_1 h2 {
+    margin-top: 3rem;
+}
+
+#tab {
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+#tab,
+#tab div {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab div { 
+    cursor: pointer;
+    width: 14rem;
+    height: 6rem;
+    color: #fff;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#tab div:hover {
+    background: var(--color-sucess);
+}
+
+#tab .tab_1 {
+    background: var(--color-primary);
+}
+
+#tab .tab_2 {
+    background: var(--color-danger);
+}
+
+#content- {
+    background: var(--color-white);
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+    border-radius: 9px;
+    width: 100%;
+}
+
+#Admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#perfil {
+    position: relative;   
+}
+
+#perfil:hover .editar-content {
+    opacity: 1;
+}
+
+#perfil .foto-content {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+#perfil .foto-content img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+#perfil .foto label {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    z-index: 99;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 100%;
+    background: #222;
+    
+}
+
+#perfil .foto label i {
+    color: #fff;
+}
+
+
+#perfil .foto input[type="file"] {
+    display: none;
+}
+
+#new {
+    position: absolute;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+#new .close-css {
+    position: absolute;
+    right: -10px;
+    background: #222;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#new .close-css:hover i {
+    color: red;
+}
+
+#new i {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.editar-content {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+    opacity: 0;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+.editar-content span {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.editar-content i {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 2px 5px;
+}
+
+#Admin form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 1rem;
+}
+
+#Admin form input,
+#Admin form select,
+#but button {
+    width: 100%;
+    height: 50px;
+    padding: 0 0.625rem;
+    margin: 6px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: var(--color-dark) solid 1px;
+    letter-spacing: 1px;
+}
+
+#Admin form input:focus,
+#Admin form select:focus,
+#but button:focus {
+    border: solid #0496f7 1px;
+}
+
+#but {
+    display: flex; 
+    gap: 10px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+#but div {
+    width: 150px;
+}
+
+#but button {
+    font-weight: 500;
+    border: none;
+    color: #fff !important;
+    cursor: pointer;
+    text-align: center;
+}
+
+#but div:nth-child(1) button {
+    background: #0496f7;
+}
+
+#but div:nth-child(1) button:hover {
+    background: #035a94;
+}
+
+#but div:nth-child(2) button {
+    background: #222;
+}
+
+#but div:nth-child(2) button:hover {
+    background: rgb(66, 65, 65);
+}
+
+/* VISUALIZAR ADMIN */
+#titu {
+    margin-top: 4rem;
+    margin-bottom: 1.3rem;
+}
+
+#geral_2 {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 9px;
+}
+
+#geral_2 table {
+    border-collapse: collapse; 
+    overflow-x: scroll; 
+    width: 100%;
+    height: auto;
+}
+
+#geral_2 table img {
+    width: 36px;
+    object-fit: cover;
+}
+
+#geral_2 table td {
+    padding: 4px 6px;
+    text-align: center;
+}
+
+#geral_2 table td:last-child {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    gap: 4px;
+    font-size: 1rem;
+}
+
+#geral_2 table td:nth-child(1) {
+    width: 120px;
+}
+
+#geral_2 table i.fa-eye:hover {
+    color: #0496f7;
+}
+
+#geral_2 table i.fa-edit:hover{
+    color: var(--color-sucess);
+}
+
+#geral_2 table i.fa-times-circle:hover {
+    color: var(--color-danger);
+}
+
+
+
+
